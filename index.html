@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel - By K Farooq</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section>
+        <nav>
+            <img src="./logo.png" alt="">
+            <div class="content">
+                <ul>
+                    <li><a href=""><button>All Winners</button></a></li>
+                    <li><a href="">Sector Winner</a></li>
+                    <li><a href=""><button>NSA 2021 Report</button></a></li>
+                    <i class="fa-solid fa-bars"></i>
+                </ul>
+            </div>
+        </nav>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="img1">
+            <img src="./Head banner.jpg" alt="">
+        </div>
+        <div class="pagestart">
+            <p id="p1">Tourism and Hospitality is one of the biggest employers forming one of the key pillars of the
+                service sector in the country.</p>
+            <div class="imgcontainer">
+                <div class="img2">
+                    <img src="./desk.png" alt="">
+                    <p>In FY'20, the tourism sector in India accounted for 39 million jobs (8% of total employment)</p>
+                </div>
+                <div class="img2">
+                    <img src="./second.png" alt="">
+                    <p>Despite the recent downturn, the sector will account for about 53 million jobs by 2029</p>
+                </div>
+            </div>
+            <p id="p2">The travel sector is also witnessing a significant change and evolution on account of the
+                pandemic
+                and the constantly changing preferences of tourists. Some of them may include utilizing the cultural
+                heritage and creation of hospitality infrastructure in rural India or utilizing the existing
+                infrastructure for medical tourism and healthcare support during this ongoing pandemic.</p>
+            <h1 id="h11">Travel in NSA 2021</h1>
+            <div id="photo2">
+                <img src="./photo 2.png" alt="">
+            </div>
+            <p id="p3">Travel, with its employment and soft power potential, is one of the sectors that is key to unlocking
+                inclusive development of the country. NSA aims at supporting exceptional startups leading the
+                development of the tourism sector in the country with a continuous support program to propel India as a
+                tourism hotspot of the world.</p>
+            <h2 id="h12">Categories and Applications Count for Travel</h2>
+            <div class="img3">
+                <img src="./circus.png" alt="">
+            </div>
+            <h1 id="winner">Winners</h1>
+            <div onclick="firstc()" class="greenbox">
+                <h1 >Villotale Technologies Private Limited</h1>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div  id="img1">
+                <img  src="./Team Image 1.jpg" alt="">
+            </div>
+            <div onclick="secondc()" class="greenbox">
+                <h1 >Upcurve Business Services Private Limited</h1>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div  id="img2">
+                <img  src="./Upcurve-Travel 2.jpg" alt="">
+            </div>
+            
+            <div onclick="thirdc()" class="greenbox">
+                <h1 >Simplotel Technologies Private Limited</h1>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div id="img3">
+                <img  src="./Team Image 3.jpg" alt="">
+            </div>
+            
+            <h1 id="AllFinalists">All Finalists</h1>
+            <table border="1">
+                <tr>
+                    <th>Name Of Startup</th>
+                    <th>Category</th>
+                    <th>City</th>
+                    <th>State</th>
+                </tr>
+                <tr>
+                    <td>Aiosell Technologies Private Limited</td>
+                    <td>Hospitality</td>
+                    <td>Bengaluru</td>
+                    <td>Karnataka</td>
+                </tr>
+                <tr>
+                    <td>Alaknanda Cruiseline Private Limited</td>
+                    <td>Hospitality</td>
+                    <td>Varanasi</td>
+                    <td>Uttar Pradesh</td>
+                </tr>
+                <tr>
+                    <td>Arcis Clean Energy Private Limited</td>
+                    <td>Travel Planning and Discovery</td>
+                    <td>Goa</td>
+                    <td>Goa</td>
+                </tr>
+                <tr>
+                    <td>NWDCo Software Solutions LLP</td>
+                    <td>Hospitality</td>
+                    <td>Mumbai</td>
+                    <td>Maharashtra</td>
+                </tr>
+                <tr>
+                    <td>Slo Mo Experiences Private Limited</td>
+                    <td>Travel Planning and Discovery</td>
+                    <td>Jaipur</td>
+                    <td>Rajastan</td>
+                </tr>
+            </table>
+            <button id="but1">Other Sectors</button>
+            <footer>
+                <p>© 2021 Startup India Hub. All Rights Reserved</p>
+            </footer>
+        </div>
+    </section>
+    <script>
+        let green = document.getElementsByClassName("greenbox")
+        let img1 = document.getElementById('img1')
+        let img2 = document.getElementById('img2')
+        let img3 = document.getElementById('img3')
+        let a = 0
+        let firstc = () =>{
+            event.preventDefault()
+            if (img1.style.display=="none") {
+                img1.style.display="block"
+            }else{
+                img1.style.display="none"
+
+            }
+        }
+        let secondc = () =>{
+            if (img2.style.display=="none") {
+                img2.style.display="block"
+            }else{
+                img2.style.display="none"
+            }
+        }
+        let thirdc = () =>{
+            if (img3.style.display=="none") {
+                img3.style.display="block"
+            }else{
+                img3.style.display="none"
+            }
+        }
+        
+
+        
+    </script>
+</body>
+
+</html>
